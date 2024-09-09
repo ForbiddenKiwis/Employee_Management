@@ -30,7 +30,7 @@ namespace Lab1_ASPNetConnectedMode.GUI
         }
 
         // SAVE
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Save_Button(object sender, EventArgs e)
         {
             BLL.Employee employee = new Employee();
             employee.EmployeeId = Convert.ToInt32(EmpId.Text.Trim());
@@ -42,7 +42,7 @@ namespace Lab1_ASPNetConnectedMode.GUI
         }
         
         // Update
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Update_Button(object sender, EventArgs e)
         {
             BLL.Employee employee = new Employee();
             employee.EmployeeId = Convert.ToInt32(EmpId.Text.Trim());
@@ -54,7 +54,7 @@ namespace Lab1_ASPNetConnectedMode.GUI
         }
 
         // Delete
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void Delete_Button(object sender, EventArgs e)
         {
             BLL.Employee emp = new Employee();
             emp.EmployeeId = Convert.ToInt32(EmpId.Text.Trim());
@@ -74,7 +74,7 @@ namespace Lab1_ASPNetConnectedMode.GUI
         }
 
         // List All
-        protected void Button4_Click(object sender, EventArgs e)
+        protected void ListAll_Button(object sender, EventArgs e)
         {
             BLL.Employee emp = new BLL.Employee();
             GridView1.DataSource = emp.GetAllEmployee();
@@ -82,7 +82,7 @@ namespace Lab1_ASPNetConnectedMode.GUI
         }
 
         // Search Employee
-        protected void Button5_Click(object sender, EventArgs e)
+        protected void Search_Button(object sender, EventArgs e)
         {
             BLL.Employee emp = new BLL.Employee();
             
@@ -117,24 +117,5 @@ namespace Lab1_ASPNetConnectedMode.GUI
             }
         }
 
-        protected void EmpId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void EmpJob_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

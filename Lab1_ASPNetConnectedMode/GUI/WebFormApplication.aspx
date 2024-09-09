@@ -11,7 +11,7 @@
         }
         .auto-style1 {
             width: 100%;
-            height: 544px;
+            height: 735px;
         }
         .auto-style2 {
             text-align: center;
@@ -68,7 +68,7 @@
         }
     </style>
 </head>
-<body style="height: 496px; width: 1261px">
+<body style="height: 496px; width: 1171px">
     <form id="form1" runat="server">
         <table class="auto-style1">
             <tr>
@@ -79,10 +79,11 @@
             <tr>
                 <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Employee ID</td>
                 <td class="auto-style6" colspan="2">
-                    <asp:TextBox ID="EmpId" runat="server" Height="42px" Width="445px" OnTextChanged="EmpId_TextChanged"></asp:TextBox>
+                    <%--                    <asp:TextBox ID="EmpId" runat="server" Height="42px" Width="445px" OnTextChanged="EmpId_TextChanged"></asp:TextBox>--%>
+                    <asp:TextBox ID="EmpId" runat="server" Height="64px" Width="443px"></asp:TextBox>
                 </td>
                 <td class="auto-style7" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Save" runat="server" Height="62px" OnClick="Button1_Click" Text="Save" Width="185px" ClientIDMode="AutoID" />
+                    <asp:Button ID="Save" runat="server" Height="62px" OnClick="Save_Button" Text="Save" Width="185px" ClientIDMode="AutoID" />
                 </td>
                 <td class="auto-style9">&nbsp;</td>
             </tr>
@@ -92,26 +93,28 @@
                     <asp:TextBox ID="EmpFirst" runat="server" Height="42px" Width="445px"></asp:TextBox>
                 </td>
                 <td class="auto-style7" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Update" runat="server" Height="62px" Text="Update" Width="185px" OnClick="Button2_Click" />
+                    <asp:Button ID="Update" runat="server" Height="62px" Text="Update" Width="185px" OnClick="Update_Button" />
                 </td>
                 <td class="auto-style9">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last Name</td>
                 <td class="auto-style6" colspan="2">
-                    <asp:TextBox ID="EmpLast" runat="server" Height="42px" Width="445px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>
+                    <%--                    <asp:TextBox ID="EmpLast" runat="server" Height="42px" Width="445px" OnTextChanged="TextBox3_TextChanged"></asp:TextBox>--%>
+                    <asp:TextBox ID="EmpLast" runat="server" Height="51px" Width="439px"></asp:TextBox>
                 </td>
                 <td class="auto-style7" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Delete" runat="server" Height="62px" Text="Delete" Width="185px" OnClick="Button3_Click" />
+                    <asp:Button ID="Delete" runat="server" Height="62px" Text="Delete" Width="185px" OnClick="Delete_Button" />
                 </td>
                 <td class="auto-style9">&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Job Title&nbsp;</td>
                 <td class="auto-style6" colspan="2">
-                    <asp:TextBox ID="EmpJob" runat="server" Height="42px" Width="445px" OnTextChanged="EmpJob_TextChanged"></asp:TextBox>
+                    <%--                    <asp:TextBox ID="EmpJob" runat="server" Height="42px" Width="445px" OnTextChanged="EmpJob_TextChanged"></asp:TextBox>--%>
+                    <asp:TextBox ID="EmpJob" runat="server" Height="54px" Width="438px"></asp:TextBox>
                 </td>
-                <td class="auto-style7" colspan="2">&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="ListAll" runat="server" Height="62px" Text="List All" Width="185px" OnClick="Button4_Click" />
+                <td class="auto-style7" colspan="2">&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="ListAll" runat="server" Height="62px" Text="List All" Width="185px" OnClick="ListAll_Button" />
                 </td>
                 <td class="auto-style9">&nbsp;</td>
             </tr>
@@ -124,14 +127,16 @@
             <tr>
                 <td class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Search By&nbsp;</td>
                 <td class="auto-style3" colspan="2">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="27px" Width="433px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+<%--                    <asp:DropDownList ID="DropDownList1" runat="server" Height="27px" Width="433px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">--%>
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="436px">
                     </asp:DropDownList>
                 </td>
                 <td class="auto-style10" colspan="2">
                     <asp:TextBox ID="Search" runat="server" Height="42px" Width="249px"></asp:TextBox>
                 </td>
                 <td class="auto-style11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="Button5" runat="server" Height="61px" Text="Search" Width="185px" OnClick="Button5_Click" />
+                    <asp:Button ID="Button5" runat="server" Height="61px" Text="Search" Width="185px" OnClick="Search_Button" />
                 </td>
             </tr>
             <tr>
